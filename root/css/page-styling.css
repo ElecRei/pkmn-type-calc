@@ -28,32 +28,56 @@
             width: 100%;
         }
 
-        h1, h2, h3, h4, h5, h6 { font-family: 'Alata', sans-serif; }
+        .site-wrapper {
+            background: skyblue;
 
-            .site-wrapper {
-                background: orange;
+            width: 1080px;
+            margin: 0 auto;
+        }
 
-                width: 1080px;
-                margin: 0 auto;
+            header, section, footer {
+                margin: 0 32px;
             }
 
-                .site-header,
-                .site-section {
-                    background: skyblue;
+            .site-header {
+                text-align: center;
+            }
 
-                    margin: 0px 24px;
-                    padding: 24px 0px;
+            .site-section {
+                background: orange;
+            }
+
+                .site-section#type-list ul {
+                    list-style: none;
                 }
 
-                    .site-header {
+                    .site-section#type-list ul:after {
+                        display: block;
+                        content: '';
+                        clear: both;
+                    }
+
+                    .site-section#type-list ul li {
+                        background: #FFF;
+                        font-family: 'Alata', sans-serif;
+                        font-size: 1.1em;
+                        font-weight: 700;
+                        overflow: hidden;
                         text-align: center;
+
+                        width: 11.11%;
+                        padding: 6px 0px;
+                        float: left;
                     }
 
-                        .site-header h1 { font-size: 2.5em;}
-                        .site-header span { font-size: 1.5em; font-style: italic; }
+                        .site-section#type-list ul li:before {
+                            content: 'I';
+                            background: pink;
 
-                    .site-section#type-list ul {
-                        text-transform: uppercase;
-                    }
+                            width: 30%;
+                            margin-left: -3%;
+                            float: left;
+                            transform: skew(-15deg, 0deg);
+                        }
 
         
