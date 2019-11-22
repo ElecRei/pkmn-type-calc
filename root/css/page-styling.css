@@ -46,12 +46,12 @@
             .site-section {
                 background: orange;
             }
-
+                /*
                 .site-section#type-list ul {
                     list-style: none;
                 }
 
-                    .site-section#type-list ul:after {
+                    .site-section#type-list ul::after {
                         display: block;
                         content: '';
                         clear: both;
@@ -70,7 +70,7 @@
                         float: left;
                     }
 
-                        .site-section#type-list ul li:before {
+                        .site-section#type-list ul li::before {
                             content: 'I';
                             background: pink;
 
@@ -79,5 +79,55 @@
                             float: left;
                             transform: skew(-15deg, 0deg);
                         }
+                */
 
+                .site-section#type-list ul {
+                    list-style: none;
+                }
+
+                    .site-section#type-list ul::after {
+                        display: block;
+                        content: '';
+                        clear: both;
+                    }
+
+                    .site-section#type-list ul li {
+
+                        width: 11.11%;
+                        padding: 6px 0px;
+                        float: left;
+                    }
+
+                        .site-section#type-list ul li a {
+                            background: #4b494c;
+                            color: #FFF;
+                            font-family: 'Alata', sans-serif;
+                            font-size: 1.1em;
+                            font-weight: 700;
+                            overflow: hidden;
+                            text-align: center;
+                            text-decoration: none;
+
+                            display: block;
+                            margin: 0 auto;
+                        }
+
+                            .site-section#type-list ul li a span.type-icon {
+                                background: pink;
+
+                                display: block;
+                                width: 30%;
+                                margin-left: -3%;
+                                float: left;
+                                transform: skew(-10deg, 0deg);
+                            }
+
+                                .site-section#type-list ul li a span.type-icon::before {
+                                    display: block;
+                                    content: 'I';
+                                    transform: skew(10deg, 0deg);
+                                }
+
+                
+                
         
